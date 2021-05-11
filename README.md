@@ -3,7 +3,7 @@ Project that aims to port the classic Snake game to as many platforms as possibl
 
 Some ports are REALLY low effort.
 
-I just want to explore each of these systems and try to come up with weird control schemes (WII 🤗)
+I just want to explore each of these systems and try to come up with weird control schemes (ex: WII 🤗)
 
 ## Platforms supported
 
