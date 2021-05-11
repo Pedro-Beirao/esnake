@@ -1,6 +1,10 @@
 # esnake - Everywhere Snake
 Project that aims to port the classic Snake game to as many platforms as possible
 
+Some ports are REALLY low effort.
+
+I just want to explore each of these systems and try to come up with weird control schemes (WII 🤗)
+
 ## Platforms supported
 
 PC
