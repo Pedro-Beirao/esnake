@@ -9,7 +9,6 @@ I just want to explore each of these systems and try to come up with weird contr
 
 PC
 ```
-pygame : Python
 scratch
 ```
 
@@ -20,12 +19,13 @@ Console
 
 Other
 ```
-ti-nspire : Lua
+ti-nspire : lua
 ```
 
 ## On the making
 ```
 psp : Lua
+pygame : py
 ```
 
 ## Coming soon
@@ -51,4 +51,6 @@ Other
 ios
 apple watch
 android
+ti-nspire : py
+ti-nspire : js
 ```
