@@ -1,5 +1,12 @@
 # ESnake - TI-Nspire
 
+## Install
+
+LUA
+```
+Just use the 'computer link' or the 'student software' to tranfer the ESnake.tns file to you calculator
+```
+
 ## Overview
 
 The ti-nspire allows you to program in LUA, so that's the obvious choice, but using **ndless** (http://ndless.me/) you can also use python and javascript
