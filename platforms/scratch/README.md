@@ -1,4 +1,4 @@
-# ESnake - Scratch Edition
+# ESnake - Scratch
 
 ## Play
 
