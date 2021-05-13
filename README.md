@@ -33,7 +33,7 @@ pygame : py
 PC
 ```
 c#
-c++
+c/c++
 js
 unity
 unreal
