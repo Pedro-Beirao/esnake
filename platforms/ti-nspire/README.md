@@ -35,7 +35,7 @@ I have to complaint about the 1 based indexing (Drove me nuts) and the "then .. 
 
 ## Remarks
 
-This was the first ESnake program, so I try to base the others in this one
+This was the first ESnake program, so I try to base the others off this one
 
 ## Screenshots
 
