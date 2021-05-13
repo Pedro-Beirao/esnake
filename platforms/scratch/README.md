@@ -1,5 +1,7 @@
 # ESnake - Scratch Edition
 
+## Play
+
 https://scratch.mit.edu/projects/530017698
 
 ## Development
