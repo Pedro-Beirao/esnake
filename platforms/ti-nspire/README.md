@@ -33,6 +33,9 @@ Although this was my first time using LUA, it was pretty staightforward.
 
 I have to complaint about the 1 based indexing (Drove me nuts) and the "then .. end" (Why not indents or brackets 😡)
 
+## Remarks
+
+This was the first ESnake program, so I try to base the other in this one
 
 ## Screenshots
 
