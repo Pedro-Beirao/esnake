@@ -1,4 +1,4 @@
-# ESnake - TI-Nspire
+# ESnake - TI-Nspire Edition
 
 ## Install
 
