@@ -24,12 +24,12 @@ Other
 ```
 ti-nspire : lua
 ```
-
+___
 ## On the making
 ```
 psp : Lua
 ```
-
+___
 ## Coming soon
 
 PC
