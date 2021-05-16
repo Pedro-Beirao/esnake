@@ -119,12 +119,16 @@ scriptPath = os.path.dirname(os.path.abspath(__file__))
 
 def playMusic():
     global isPlaying
+    isPlaying=True
     try:
-        isPlaying=True
         playsound(scriptPath+'/midi.mp3')
         isPlaying=False
     except:
-        isPlaying=True
+        try:
+            playsound(scriptPath+'/midi.wav')
+            isPlaying=False
+        except:
+            isPlaying=True
 
 t = threading.Thread(target=playMusic)
 t.daemon = True
