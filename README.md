@@ -1,7 +1,8 @@
 # ESnake - Everywhere Snake
 Project that aims to port the classic Snake game to as many platforms and languages as possible
 
-<img width="100" alt="Screenshot 2021-05-16 at 21 14 11" src="https://user-images.githubusercontent.com/82064173/118411295-b34fe880-b68b-11eb-9726-c7a09aa93551.png"> ![IMG_1634](https://user-images.githubusercontent.com/82064173/118411372-1b9eca00-b68c-11eb-9a9d-0016b2e2f67d.jpg)
+<img width="100" alt="Screenshot 2021-05-16 at 21 14 11" src="https://user-images.githubusercontent.com/82064173/118411295-b34fe880-b68b-11eb-9726-c7a09aa93551.png"> ![IMG_1634](https://user-images.githubusercontent.com/82064173/118411372-1b9eca00-b68c-11eb-9a9d-0016b2e2f67d.jpg) <img width="110" alt="Screenshot 2021-05-16 at 21 20 56" src="https://user-images.githubusercontent.com/82064173/118411468-a41d6a80-b68c-11eb-9b38-1d762b0b1a4b.png">
+
 
 Currently there are `3` ports
 
