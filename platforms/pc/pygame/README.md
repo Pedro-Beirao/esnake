@@ -1,6 +1,6 @@
 # ESnake - Pygame
 
-## Install
+## Download
 
 Paste this to your browser
 ```
