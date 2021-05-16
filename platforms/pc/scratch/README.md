@@ -8,7 +8,7 @@ https://scratch.mit.edu/projects/530017698
 
 So, the time has come to make Snake with my worst enemy, drag and drop programming.
 
-It was ... weird. Not even tile based.
+It was ... weird. wasn't even tile based.
 
 ## Remarks
 
