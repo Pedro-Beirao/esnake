@@ -11,6 +11,7 @@ I just want to explore each of these systems and try to come up with weird contr
 
 PC
 ```
+pygame
 scratch
 ```
 
@@ -27,7 +28,6 @@ ti-nspire : lua
 ## On the making
 ```
 psp : Lua
-pygame : py
 ```
 
 ## Coming soon
