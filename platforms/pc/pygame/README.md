@@ -2,6 +2,14 @@
 
 ## Download
 
+Install the dependecies
+```
+$ pip install pygame
+
+$ pip install playsound
+  # if you want music
+```
+
 Paste this to your browser
 ```
 https://downgit.github.io/#/home?url=https://github.com/PBeGood4/esnake/tree/main/platforms/pc/pygame
