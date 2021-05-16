@@ -1,7 +1,7 @@
 # ESnake - Everywhere Snake
 Project that aims to port the classic Snake game to as many platforms and languages as possible
 
-Currently there are `2` ports
+Currently there are `3` ports
 
 Some ports are REALLY low effort.
 
