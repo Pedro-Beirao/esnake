@@ -4,7 +4,9 @@ import threading
 import sys
 import random
 import json
-from playsound import playsound
+try:
+    from playsound import playsound
+except:pass
 
 grid_height=25
 grid_width=25
