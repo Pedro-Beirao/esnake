@@ -26,6 +26,7 @@ ___
 2. There must be a *queue* system that queues each input.
   
       If you press **up**, the snake goes up, but if you press **up** and **right** quickly, the snake will only go **right**
+      
       A *queue* system will prevent this problem
      
 ___
@@ -44,3 +45,15 @@ ___
         with open(scriptPath+"/esnake.json","w") as writeTxt:
             json.dump(highscore, writeTxt)
       ```
+5. Implementation of music/audio is recommended
+
+      You you choose to implement audio, you can either include your own, or make it clear how to use our own.
+      
+      Using a *try* block is the obvious choice. 
+      ```python3
+      try:
+        playsound('/midi.mp3')
+      ```
+      Try to include support for both .mp3 and .wav
+      
+      The name of the music should be midi.mp3 / midi.wav for consistency
