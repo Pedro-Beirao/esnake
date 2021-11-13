@@ -1,0 +1,8 @@
+set(SOURCES
+src/draw.cpp 
+src/draw.h
+src/move.cpp
+src/move.h
+src/food.cpp
+src/food.h
+)

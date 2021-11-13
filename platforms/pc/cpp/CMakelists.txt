@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.0)
+
+project(CppESnake)
+
+set(SOURCE src/main.cpp)
+
+include(src/CMakeLists.txt)
+
+include_directories(${CppESnake})
+include_directories(${CppESnake}/src)
+
+find_package(SDL2 REQUIRED)
+include_directories(${SDL2_INCLUDE_DIRS})
+link_directories(${SDL2_LIBRARY_DIRS})
+
+add_executable(${PROJECT_NAME} ${SOURCE} ${SOURCES})
+target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARIES} )
+
+
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
