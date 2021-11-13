@@ -30,3 +30,9 @@ Really nothing else to say except, dont try making games to old systems using sl
 The grid is just a .png because rendering every square was too slow 😂
 
 ## Screenshots
+
+
+
+## Thanks to
+
+- The youtuber that made an awesome video about making LUA games for the psp (Sorry I couldn't find the link to the video)
