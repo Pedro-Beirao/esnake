@@ -18,7 +18,6 @@ PC
 ```
 pygame
 scratch
-
 js
 ```
 
