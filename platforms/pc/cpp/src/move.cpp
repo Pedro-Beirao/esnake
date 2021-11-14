@@ -10,9 +10,6 @@ std::vector<std::pair<int, int>> moveSnake(std::pair<int,int> direction,std::vec
     std::vector<std::pair<int, int>> newPositions;
     if(positions[0].first<0 || positions[0].first>24 || positions[0].second<0 || positions[0].second>24) // Snake is out of bounds, reset
     {
-        return newPositions;
-    }
-    {
         reset();
         return {make_pair(5,10), make_pair(6,10)};
     }
@@ -23,9 +20,6 @@ std::vector<std::pair<int, int>> moveSnake(std::pair<int,int> direction,std::vec
     for(int p = 0; p < length; p++)
     {
         if(positions[p] == positions[0] && p != 0) // Snake is eating itself, reset
-        {
-            return newPositions;
-        }
         {
             reset();
             return {make_pair(5,10), make_pair(6,10)};
