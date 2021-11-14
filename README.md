@@ -7,7 +7,7 @@ Project that aims to port the classic Snake game to as many platforms and langua
 
 
 
-Currently there are `5` ports
+Currently there are `6` ports
 
 Some ports are REALLY low effort.
 
