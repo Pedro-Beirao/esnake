@@ -3,3 +3,6 @@ platforms/.DS_Store
 platforms/pc/.DS_Store
 platforms/pc/js/.DS_Store
 .DS_Store
+.vscode/c_cpp_properties.json
+.vscode/settings.json
+platforms/pc/pygame/esnake.json

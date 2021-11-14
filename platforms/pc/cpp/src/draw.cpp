@@ -3,11 +3,12 @@
 
 using namespace std;
 
+// 20x25 grid
 int gridsize = 20;
 int grid_height = 25;
 int grid_width = 25;
 
-
+// Draws the grid
 void drawGrid(SDL_Window *window, SDL_Surface *window_surface)
 {
     for(int x = 0; x<grid_width; x+=1)
@@ -27,6 +28,7 @@ void drawGrid(SDL_Window *window, SDL_Surface *window_surface)
     }
 }
 
+// Draws the snake
 void drawSnake(SDL_Window *window, SDL_Surface *window_surface,std::vector<std::pair<int, int>> positions)
 {
     for(int i = 0; i<positions.size(); i++)
@@ -36,6 +38,7 @@ void drawSnake(SDL_Window *window, SDL_Surface *window_surface,std::vector<std::
     }
 }
 
+ // Draws the food
 void drawFood(SDL_Window *window, SDL_Surface *window_surface)
 {
     SDL_Rect rect = {(foodPos.first)*gridsize, (foodPos.second)*gridsize, gridsize, gridsize};

@@ -20,7 +20,7 @@ bool eat(std::vector<std::pair<int, int>> positions, int length)
 
 void randomize()
 {
-    foodPos.first = rand() % (20 - 1);
-    foodPos.second = rand() % (20 - 1);
+    foodPos.first = rand() % 24;
+    foodPos.second = rand() % 24;
 }
 

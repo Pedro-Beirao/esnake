@@ -1,13 +1,19 @@
-#include <SDL.h>
-#include <iostream>
-#include "draw.h"
-#include "move.h"
-#include "food.h"
-#include <vector>
+#include "main.h"
 
 using namespace std;
 
 std::vector<std::pair<int, int>> positions;
+std::deque<std::pair<int,int>> direction;
+std::pair<int,int> dir;
+int length;
+
+// Reset snake to initial state
+void reset()
+{
+    direction = {make_pair(1, 0)};
+    dir = make_pair(1,0);
+    length = 2;
+}
 
 int main(int argc, char *argv[])
 {
@@ -43,11 +49,12 @@ int main(int argc, char *argv[])
     bool keep_window_open = true;
     const int ms_frame = 100;
     Uint32 initial_ticks, elapsed_ms;
-    std::pair<int,int> direction = make_pair(1,0);
+    dir = make_pair(1,0);
+    direction.push_back(make_pair(1, 0));
     positions.push_back(make_pair(5, 10));
     positions.push_back(make_pair(6, 10));
     initial_ticks = SDL_GetTicks();
-    int length = 2;
+    length = 2;
     randomize();
     while(keep_window_open)
     {
@@ -60,29 +67,40 @@ int main(int argc, char *argv[])
                     keep_window_open = false;
                     break;
                 case SDL_KEYDOWN:
-                    switch(e.key.keysym.sym)
+                    if(e.key.keysym.sym == SDLK_UP && direction[0] != make_pair(0, 1) && dir != make_pair(0, 1) && direction.size() < 3)
                     {
-                        case SDLK_UP:
-                            direction = make_pair(0,-1);
-                            break;
-                        case SDLK_DOWN:
-                            direction = make_pair(0,1);
-                            break;
-                        case SDLK_LEFT:
-                            direction = make_pair(-1,0);
-                            break;
-                        case SDLK_RIGHT:
-                            direction = make_pair(1,0);
-                            break;
-                        default:
-                            break;
+                        dir = make_pair(0, -1);
+                        direction.push_back(make_pair(0, -1));
                     }
-                    break;
+                    else if(e.key.keysym.sym == SDLK_DOWN && direction[0] != make_pair(0, -1)  && dir != make_pair(0, -1) && direction.size() < 3)
+                    {
+                        dir = make_pair(0, 1);
+                        direction.push_back(make_pair(0, 1));
+                    }
+                    else if(e.key.keysym.sym == SDLK_LEFT && direction[0] != make_pair(1, 0) && dir != make_pair(1,0) && direction.size() < 3)
+                    {
+                        dir = make_pair(-1, 0);
+                        direction.push_back(make_pair(-1, 0));
+                    }
+                    else if(e.key.keysym.sym == SDLK_RIGHT && direction[0] != make_pair(-1, 0) && dir != make_pair(-1, 0)  && direction.size() < 3)
+                    {
+                        dir = make_pair(1, 0);
+                        direction.push_back(make_pair(1, 0));
+                    }
+                break;   
             }
         }
             if( initial_ticks + ms_frame < SDL_GetTicks())
             {
-                positions = moveSnake(direction,positions,length);
+                if(direction.size() > 0)
+                {
+                    positions = moveSnake(direction[0],positions,length);
+                    direction.pop_front();
+                }
+                else
+                {
+                    positions = moveSnake(dir,positions,length);
+                }
                 length = positions.size();
                 drawGrid(window,window_surface);
                 drawFood(window,window_surface);

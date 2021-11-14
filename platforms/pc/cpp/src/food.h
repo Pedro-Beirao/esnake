@@ -1,7 +1,7 @@
 #ifndef FOOD_H
 #define FOOD_H
 
-#include <sdl.h>
+#include <SDL.h>
 #include "iostream"
 #include <vector>
 
