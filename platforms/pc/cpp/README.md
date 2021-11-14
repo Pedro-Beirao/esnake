@@ -1,0 +1,54 @@
+# ESnake - C++ (cpp)
+
+## Download
+
+Paste this to your browser
+```
+https://downgit.github.io/#/home?url=https://github.com/PBeGood4/esnake/tree/main/platforms/pc/cpp
+```
+
+___
+
+*Crossplatform*
+
+Needs: Make, Cmake and SDL2
+
+#### MacOS:
+```
+Make: $ xcode-select --install
+CMake: $ brew install cmake
+SDL2: $ brew install sdl2
+```
+
+#### Debian / Ubuntu:
+```
+Make: $ sudo apt-get install build-essential
+CMake: $ sudo apt-get install cmake
+SDL2: $ sudo apt-get install libsdl2-dev
+```
+
+#### Windows:
+```
+Make: https://www.mingw-w64.org
+Cmake: https://cmake.org
+SDL2: https://www.libsdl.org/
+```
+
+## Compile
+
+Open the Terminal/CMD
+
+```zsh
+cd /path/to/folder
+ls    <- this should output:   src  CMakelists.txt  README.md
+mkdir build
+cd build
+cmake ..
+make
+```
+
+
+## Screenshots
+
+
+
