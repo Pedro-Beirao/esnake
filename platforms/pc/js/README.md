@@ -4,7 +4,7 @@
 
 Paste this to your browser
 ```
-https://downgit.github.io/#/home?url=https://github.com/PBeGood4/esnake/tree/main/platforms/pc/pygame
+https://downgit.github.io/#/home?url=https://github.com/PBeGood4/esnake/tree/main/platforms/pc/js
 ```
 
 ___
